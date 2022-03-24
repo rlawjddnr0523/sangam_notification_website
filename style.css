@@ -1,0 +1,87 @@
+.title.subtitle{
+
+}
+.title {
+    font-size: 47px;
+    margin-left: 10px;
+    font-weight: 200;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+@media screen and (max-width: 767px){
+    .title {
+        font-size: 25px;
+    }
+}
+.subtitle {
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 200;
+    font-family: 'Gowun Dodum', sans-serif;
+    user-select: none;
+}
+@media screen and (max-width: 767px){
+    .subtitle {
+        font-size: 15px;
+    }
+}
+.top {
+    border-bottom: 1px solid black;
+    background-color: #2782ff;
+    color: white;
+}
+.top-0 {
+
+}
+.top-1 {
+
+}
+.top-2 {
+
+}
+.top-nav {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.top-nav > a {
+    color: white;
+    -webkit-user-drag: none;
+    font-size: 15px;
+}
+.regist-form {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.login-redirect1 {
+    font-size: 13px;
+}
+.login-redirect1 > a{
+    color: black;
+    text-decoration-line: none;
+}
+.regist-redirect {
+    font-size: 13px;
+    color: black;
+    text-decoration-line: none;
+}
+.regist-redirect > a {
+
+}
+.login-form {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.loginplz {
+    margin-top: 200px;
+    margin-left: 30px;
+    font-size: 50px;
+    color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .loginplz {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-top: 100px;
+    }
+}
