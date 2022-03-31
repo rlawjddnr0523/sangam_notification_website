@@ -40,9 +40,9 @@
             <p><input type="submit" value="회원가입하기"> </p>
         </form>
     </div>
-    <div class="login-redirect1">
+    <p class="login-redirect1">
         <a href="login.php">로그인하기.</a>
-    </div>
+    </p>
 </div>
 </body>
 </html>
