@@ -4,6 +4,7 @@
     <?php
         sleep(0);
         session_start();
+        $mysqli = mysqli_connect("localhost", "kjwook0523", "Kimmark4167*", "kjwook0523");
     ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,8 +47,17 @@
         <div class="discription">
             <?php
                 if(isset($_SESSION['sangam_id']) === true) {
-                    ?>
-
+                    ?><div class="date">오늘은 <?php echo date("m-d");?>입니다.</div>
+                    <div class="todaypost">오늘의 게시물</div>
+                    <div class="todayspost">
+                        <?php
+                            $sql = "SELECT * FROM sangam_post where writed = current_date";
+                            $query = mysqli_query($mysqli, $sql);
+                            while($row = mysqli_fetch_array($query)) {
+                                ?><a href="postview.php?id=<?php echo "$row[id]"; ?>"><?php echo "$row[title]"; ?></a><?php
+                            }
+                        ?>
+                    </div>
                     <?php
                 } else {
                     ?>
