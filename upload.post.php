@@ -21,11 +21,11 @@ $mysqli = mysqli_connect("localhost", "kjwook0523", "Kimmark4167*", "kjwook0523"
 
 $title = $_POST['title'];
 $contents = $_POST['contents'];
-$uploader = $_SESSION['sangam_id'];
+$wuser = $_POST['wuser'];
 $date = date("Y-m-d H:i:s");
 $id = GenerateString(10);
 
-$sql = "insert into sangam_post (title, contents, writed, writer, id) value('$title', '$contents', '$date', '$uploader','$id')";
+$sql = "insert into sangam_post(title, contents, id, writed, writer) value('$title','$contents','$id','$date','$wuser')";
 
 $result = mysqli_query($mysqli, $sql);
 if ($result) {
