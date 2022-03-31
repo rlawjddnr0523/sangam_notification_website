@@ -45,11 +45,11 @@
     </div>
 </div>
 <div class="middle">
-    <div class="discription">
+    <div class="uploadpostfield">
         <form method="post" action="upload.post.php">
-            <p><input type="text" name="title" id="title" placeholder="제목을 입력해주세요" ><label> 제목</label></p>
+            <p><input type="text" name="title" id="title" placeholder="제목을 입력해주세요" ></p>
             <p><textarea name="contents" id="contents" placeholder="내용을 입력해주세요."></textarea></p>
-            <p><div>작성자 : <?php echo $_SESSION['sangam_id']; ?></div></p>
+            <p><label>작성자 : </label><input type="text" name="wuser" id="wuser" value="<?php echo $_SESSION['sangam_id']; ?>" readonly></p>
             <p><input type="submit" value="게시물 올리기"/></p>
         </form>
     </div>
