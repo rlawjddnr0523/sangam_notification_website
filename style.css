@@ -98,3 +98,12 @@
     font-size: 20px;
     font-weight: bold;
 }
+.ok {
+    text-decoration-line: none;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+.ok-1 .ok-2 {
+    font-weight: bold;
+}

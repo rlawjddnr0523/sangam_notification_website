@@ -48,13 +48,16 @@
             <?php
                 if(isset($_SESSION['sangam_id']) === true) {
                     ?><div class="date">오늘은 <?php echo date("m-d");?>입니다.</div>
-                    <div class="todaypost">오늘의 게시물</div>
+                    <div class="todaypost">오늘의 공지</div>
+                    <p></p>
                     <div class="todayspost">
                         <?php
-                            $sql = "SELECT * FROM sangam_post where writed = current_date";
+                            $sql = "SELECT * FROM sangam_post where writed >= current_date";
                             $query = mysqli_query($mysqli, $sql);
                             while($row = mysqli_fetch_array($query)) {
-                                ?><a href="postview.php?id=<?php echo "$row[id]"; ?>"><?php echo "$row[title]"; ?></a><?php
+                                ?><a href="postview.php?id=<?php echo "$row[id]"; ?>" class="ok"><?php echo "$row[title]"; ?></a>
+                                <div class="ok-1"><?php echo "$row[writed]"; ?></div>
+                                <div class="ok-2"><?php echo "$row[writer]"; ?></div><?php
                             }
                         ?>
                     </div>
