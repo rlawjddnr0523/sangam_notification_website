@@ -4,6 +4,12 @@
     <?php
     sleep(0);
     session_start();
+    if(isset($_SESSION['sangam_id']) === false) {
+        ?><script>
+        alert("로그인 후 이용 가능한 서비스 입니다.")
+        </script>
+
+        }
     ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,14 +25,23 @@
                 게시물 보기 <i class="fa fa-university" aria-hidden="true"></i>
             </a>
         </div>
-        <div class="subtitle">
-            게시물을 확인하려면 로그인해주세요.
-        </div>
     </div>
     <div class="top-2">
         <div class="top-nav">
-            <a href="index.php">메인페이지</a>
-            <a href="register.php">회원가입</a>
+            <?php
+            if(isset($_SESSION['sangam_id']) === true) {
+                ?>
+                <a href="allpost.php">모든 게시물 보기</a>
+                <a href="creator.info.php">개발자 정보</a>
+                <a href="logout.php">로그아웃</a>
+                <?php
+            } else {
+                ?>
+                <a href="login.php">로그인</a>
+                <a href="register.php">회원가입</a>
+                <?php
+            }
+            ?>
         </div>
     </div>
 </div>
