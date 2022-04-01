@@ -6,9 +6,8 @@
     session_start();
     if(isset($_SESSION['sangam_id']) === false) {
         ?><script>
-        alert("로그인 후 이용 가능한 서비스 입니다.")
+        alert("로그인 후 이용 가능한 서비스 입니다.");
         </script>
-
         }
     ?>
     <meta charset="utf-8">
