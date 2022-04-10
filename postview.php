@@ -50,7 +50,7 @@
         $sql = "SELECT * FROM sangam_post where id = '$_GET[id]'";
         $result = mysqli_query($mysqli, $sql);
         while($row = mysqli_fetch_array($result)) {
-            ?><div class="title-1"><h2><?php echo $row['title']; ?></h2></div>
+            ?><div class="title-1"><h1><?php echo $row['title']; ?></h1></div>
             <div class="contents-1"><h3><?php echo $row['contents']; ?></h3></div>
             <div class="writer-1"><h5><?php echo $row['writer']; ?></h5></div>
             <div class="writed-1"><h5><?php echo $row['writed']; ?></h5></div><?php

@@ -50,6 +50,8 @@
                     ?><div class="date">오늘은 <?php echo date("m-d");?>입니다.</div>
                     <div class="todaypost">오늘의 공지</div>
                     <p></p>
+                    <a href="uploadpost.php" class="uploadpost-redirect">게시물 올리기</a>
+                    <p></p>
                     <div class="todayspost">
                         <?php
                             $sql = "SELECT * FROM sangam_post where writed >= current_date";

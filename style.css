@@ -107,3 +107,9 @@
 .ok-1 .ok-2 {
     font-weight: bold;
 }
+.uploadpost-redirect {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration-line: underline;
+    color: black;
+}
