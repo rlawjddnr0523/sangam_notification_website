@@ -1,32 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <?php
-        sleep(0);
-        session_start();
-        $mysqli = mysqli_connect("localhost", "kjwook0523", "Kimmark4167*", "kjwook0523");
-    ?>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>3-9반 공지 사이트 - 메인페이지</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <div class="top top-0">
-        <div class="top-1">
-            <div class="title">
-                <a href="index.php" class="title-1" style="text-decoration-line: none; color: white; -webkit-user-drag: none">
-                    상암중학교 3-9 공지 웹사이트 <i class="fa fa-university" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="subtitle">
-                2022학년도 30905 김정욱 제작.
-            </div>
-        </div>
-        <div class="top-2">
-            <div class="top-nav">
+<?php
+    include_once("top.php");
+?>
+<div class="top-nav">
                 <?php
+                $mysqli = mysqli_connect("localhost", "kjwook0523", "Kimmark4167*", "kjwook0523");
                     if(isset($_SESSION['sangam_id']) === true) {
                         ?>
                             <a href="allpost.php">모든 게시물 보기</a>
@@ -42,6 +19,9 @@
                 ?>
             </div>
         </div>
+    </div>
+    <div class="nav-1">
+
     </div>
     <div class="middle">
         <div class="discription">
@@ -60,6 +40,9 @@
                                 ?><a href="postview.php?id=<?php echo "$row[id]"; ?>" class="ok"><?php echo "$row[title]"; ?></a>
                                 <div class="ok-1"><?php echo "$row[writed]"; ?></div>
                                 <div class="ok-2"><?php echo "$row[writer]"; ?></div><?php
+                                if($row['title'] = null){
+                                    ?><div class="a-1">조용하네요.. 아무 게시물도 게시 되지 않았습니다.</div><?php
+                                }
                             }
                         ?>
                     </div>
