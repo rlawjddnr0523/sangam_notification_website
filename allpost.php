@@ -1,5 +1,5 @@
 <?php
-    include_once("top.php");
+    include("top.php");
 ?>
 <div class="top-nav">
     <?php
