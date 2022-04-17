@@ -13,7 +13,6 @@
     <?php
         if($var == "index.php"){
             $title = "3-9반 공지 사이트 - 메인페이지";
-            $maintitle = "상암중학교 3-9 공지 웹사이트";
         }
     ?>
     <title><?php echo $title; ?></title>
@@ -25,7 +24,7 @@
     <div class="top-1">
         <div class="title">
             <a href="index.php" class="title-1" style="text-decoration-line: none; color: white; -webkit-user-drag: none">
-                <?php echo $maintitle; ?> <i class="fa fa-university" aria-hidden="true"></i>
+                상암중학교 3-9반 공지 웹사이트 <i class="fa fa-university" aria-hidden="true"></i>
             </a>
         </div>
         <div class="subtitle">
