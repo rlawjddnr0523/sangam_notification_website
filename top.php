@@ -14,6 +14,9 @@
         if($var == "index.php"){
             $title = "3-9반 공지 사이트 - 메인페이지";
         }
+        if($var == "allpost.php"){
+            $title = "3-9반 공지 사이트 - 모든 게시물 보기";
+        }
     ?>
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -28,7 +31,7 @@
             </a>
         </div>
         <div class="subtitle">
-            게시물을 올리고 싶으시다면 로그인해주세요!
+            30905 김정욱 제작
         </div>
     </div>
     <div class="top-2">
