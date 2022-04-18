@@ -1,5 +1,5 @@
 <?php
-    include("top.php");
+    include_once("top.php");
 ?>
 <div class="top-nav">
     <?php
@@ -24,7 +24,7 @@
 <div class="middle">
     <div class="discription">
         <?php
-
+            
         ?>
     </div>
 </div>
