@@ -24,7 +24,7 @@
 <div class="middle">
     <div class="discription">
         <?php
-            
+
         ?>
     </div>
 </div>
