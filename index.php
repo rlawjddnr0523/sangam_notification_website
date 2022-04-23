@@ -40,7 +40,7 @@
                                 ?><a href="postview.php?id=<?php echo "$row[id]"; ?>" class="ok"><?php echo "$row[title]"; ?></a>
                                 <div class="ok-1"><?php echo "$row[writed]"; ?></div>
                                 <div class="ok-2"><?php echo "$row[writer]"; ?></div><?php
-                                if($row['title'] = null){
+                                if($row['title'] = null) {
                                     ?><div class="a-1">조용하네요.. 아무 게시물도 게시 되지 않았습니다.</div><?php
                                 }
                             }
